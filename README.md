@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+# Desafio Técnico Presencial – Desenvolvedor(a) Frontend (Estágio)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objetivo
 
-## Available Scripts
+Desenvolver uma aplicação React que consuma a [Fake Store API](https://fakestoreapi.com/) e exiba um catálogo de produtos com a funcionalidade de adicionar ao carrinho.
 
-In the project directory, you can run:
+Este desafio tem como objetivo avaliar seu domínio dos fundamentos do React, organização de projeto, escrita de código, consumo de APIs REST e construção de interface com foco funcional.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Requisitos
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Funcionalidades obrigatórias
 
-### `npm test`
+* Listar produtos da API em cards com as seguintes informações:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  * Imagem do produto
+  * Nome
+  * Preço
+  * Botão para adicionar ao carrinho
+* Exibir o número de itens no carrinho e o total de valor no cabeçalho
+* O estado do carrinho deve ser mantido na aplicação enquanto ela estiver aberta
 
-### `npm run build`
+### Funcionalidades bônus (não obrigatórias)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Cada funcionalidade bônus implementada aumenta a nota final em:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* **Remover itens do carrinho** → +1 ponto
+* **Exibir detalhes do produto em um modal** → +1 ponto
+* **Persistência do carrinho no localStorage** → +3 pontos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Avaliação
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Os candidatos serão avaliados com base nos seguintes critérios:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Critério                                    | Peso | Descrição                                                                            |
+| ------------------------------------------- | ---- | ------------------------------------------------------------------------------------ |
+| **Projeto funcional**                       | 4    | A aplicação funciona corretamente, sem erros, e cobre o fluxo proposto               |
+| **Legibilidade e escrita de código**        | 4    | Código limpo, organizado, sem duplicações, com nomes claros e coerentes              |
+| **Uso correto dos hooks**                   | 3    | Uso adequado de `useState`, `useEffect`, `useMemo` e outros hooks básicos            |
+| **Arquitetura do projeto**                  | 3    | Organização das pastas, separação de responsabilidades, componentes bem estruturados |
+| **Tratamento de erros e feedbacks visuais** | 2    | Lida com estados de erro, loading e estados vazios de forma clara                    |
+| **Responsividade e design**                 | 1    | Layout visual simples, responsivo e funcional                                        |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Além disso, funcionalidades bônus adicionam até **5 pontos extras** à nota final.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Você deverá utilizar a [Fake Store API](https://fakestoreapi.com/products) para obter a lista de produtos.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Exemplo de requisição
+
+```
+GET https://fakestoreapi.com/products
+```
+
+### Exemplo de resposta
+
+```json
+[
+  {
+    "id": 1,
+    "title": "Fjallraven - Foldsack No. 1 Backpack",
+    "price": 109.95,
+    "description": "Your perfect pack for everyday use and walks in the forest...",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+  }
+]
+```
+
+---
+
+## Instruções finais
+
+* Você deve clonar o seguinte repositório antes de começar o desenvolvimento:
+  [https://github.com/Viitra-Inovacoes/desafio-frontend](https://github.com/Viitra-Inovacoes/desafio-frontend)
+* Ao final do desafio, você deverá abrir um **Pull Request (PR)** com sua solução para esse repositório.
+* A demonstração do projeto será feita localmente (não é necessário fazer deploy).
+* Durante o desafio, será permitido fazer perguntas e pedir esclarecimentos.
+* Você é **livre para pesquisar e utilizar a internet**, incluindo documentação oficial e fóruns de desenvolvedores.
