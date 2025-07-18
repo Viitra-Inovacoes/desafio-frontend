@@ -1,0 +1,7 @@
+services:
+  front:
+    image: desafio-frontend
+    volumes:
+      - .:/app
+    ports:
+      - 4200:3000
