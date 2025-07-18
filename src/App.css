@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  background-color: #0d1f24; /* fundo escuro suave com tom azulado */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e0f2f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App-logo {
+  height: 100px;
+  pointer-events: none;
+  animation: float 4s ease-in-out infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.App-header {
+  background-color: #123239; /* azul esverdeado bem escuro */
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 16px rgba(0, 150, 136, 0.25);
+  border: 1px solid #1de9b6; /* tom turquesa leve */
+  max-width: 560px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 1.75rem;
+  color: #b2dfdb; /* texto suave */
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #80cbc4;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.good-luck {
+  color: #1de9b6;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
